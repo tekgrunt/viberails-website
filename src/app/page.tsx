@@ -18,7 +18,7 @@ function CopyCommand() {
   }
 
   return (
-    <div style={{ maxWidth: '560px', width: '100%' }}>
+    <div style={{ maxWidth: '620px', width: '100%' }}>
       <div
         onClick={handleCopy}
         style={{
@@ -193,7 +193,7 @@ export default function Home() {
             tool calls before they execute. Be the guardrail between your AI and
             the world. For you and your team.
           </p>
-          <div className="pt-6 w-full max-w-3xl">
+          <div className="pt-6 w-full max-w-3xl flex justify-center">
             <CopyCommand />
           </div>
         </div>
