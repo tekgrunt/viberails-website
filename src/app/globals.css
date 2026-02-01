@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --vr-dark: #0a0f1a;
+  --vr-darker: #060a12;
+  --vr-blue-6: #60a5fa;
+  --vr-pink-2: #be185d;
+  --vr-cyan: #22d3ee;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--vr-dark);
+  color: white;
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-vr-cyan via-vr-blue-5 to-vr-pink-3;
+  }
+
+  .glow-cyan {
+    box-shadow: 0 0 40px rgba(34, 211, 238, 0.3);
+  }
+
+  .glow-pink {
+    box-shadow: 0 0 40px rgba(219, 39, 119, 0.3);
+  }
+}
+
+/* Tron Grid Background */
+.tron-grid {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  overflow: hidden;
+  perspective: 400px;
+  perspective-origin: 50% 50%;
+}
+
+.tron-grid::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  right: -50%;
+  bottom: -100%;
+  background-image:
+    linear-gradient(to right, rgba(34, 211, 238, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(34, 211, 238, 0.15) 1px, transparent 1px);
+  background-size: 60px 60px;
+  transform: rotateX(60deg);
+  transform-origin: top center;
+  animation: grid-flow 20s linear infinite;
+}
+
+.tron-grid::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(to bottom, var(--vr-dark) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+@keyframes grid-flow {
+  0% {
+    transform: rotateX(60deg) translateY(0);
+  }
+  100% {
+    transform: rotateX(60deg) translateY(60px);
+  }
+}
+
+/* Horizon glow line */
+.horizon-glow {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.6) 20%, rgba(219, 39, 119, 0.6) 80%, transparent);
+  box-shadow:
+    0 0 20px rgba(34, 211, 238, 0.5),
+    0 0 40px rgba(34, 211, 238, 0.3),
+    0 0 60px rgba(219, 39, 119, 0.2);
+}
