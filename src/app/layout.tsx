@@ -3,11 +3,25 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Viberails - Secure Your AI Agents',
-  description: 'Secure OpenClaw and other agentic systems by intercepting and validating tool calls before they execute. Be the guardrail between your AI and production systems.',
+  description: 'Secure OpenClaw and other agentic systems by intercepting, auditing and validating tool calls before they execute.',
   openGraph: {
     title: 'Viberails - Secure Your AI Agents',
-    description: 'Secure OpenClaw and other agentic systems by intercepting and validating tool calls before they execute.',
+    description: 'Secure OpenClaw and other agentic systems by intercepting, auditing and validating tool calls before they execute.',
     type: 'website',
+    images: [
+      {
+        url: '/vr.png',
+        width: 1200,
+        height: 630,
+        alt: 'Viberails - Secure Your AI Agents',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Viberails - Secure Your AI Agents',
+    description: 'Secure OpenClaw and other agentic systems by intercepting, auditing and validating tool calls before they execute.',
+    images: ['/vr.png'],
   },
 }
 

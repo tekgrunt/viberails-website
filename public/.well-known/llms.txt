@@ -1,0 +1,48 @@
+# Viberails
+
+Viberails is a security layer for AI agents that intercepts, audits, and validates tool calls before they execute. It acts as a guardrail between your AI and the world.
+
+## Overview
+
+Viberails secures agentic systems like OpenClaw, Claude Code, AutoGPT, and other autonomous AI agents by sitting in the blocking path of tool calls. Every action an AI agent attempts passes through Viberails first, giving you visibility and control.
+
+## Key Features
+
+- **Inline Security**: Sits in the blocking path of tool calls for real-time control
+- **Full Visibility**: See every tool call, parameter, and response
+- **Policy Enforcement**: Define allowed operations and block dangerous ones automatically
+- **Complete Audit Trail**: Log and audit all agentic operations at scale
+
+## How It Works
+
+1. **Intercept**: Viberails sits between your AI agent and its tools
+2. **Validate**: Apply security policies in real-time, check parameters, verify permissions
+3. **Control**: Allow, block, or modify tool calls based on your policies
+
+## Use Cases
+
+- **OpenClaw & Claude Code**: Prevent unauthorized file access, command execution, and data exfiltration
+- **Autonomous Agents**: Add guardrails to AutoGPT, BabyAGI, and other autonomous systems
+- **Enterprise AI Deployments**: Implement organization-wide policies for AI tool usage
+- **MCP Server Security**: Validate requests and enforce access controls on Model Context Protocol servers
+
+## Installation
+
+### macOS / Linux
+```bash
+curl -fsSL https://get.viberails.io/install.sh | bash
+```
+
+### Windows (PowerShell)
+```powershell
+irm https://get.viberails.io/install.ps1 | iex
+```
+
+## Links
+
+- [Viberails Website](https://viberails.io)
+- [Powered by LimaCharlie](https://limacharlie.io)
+
+## Contact
+
+Viberails is a LimaCharlie project. For more information about LimaCharlie's SecOps Cloud Platform, visit https://limacharlie.io
