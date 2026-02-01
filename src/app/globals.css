@@ -21,6 +21,18 @@ body {
   color: white;
 }
 
+button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+button:focus,
+button:hover {
+  outline: none;
+  box-shadow: none;
+}
+
 @layer utilities {
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-vr-cyan via-vr-blue-5 to-vr-pink-3;
