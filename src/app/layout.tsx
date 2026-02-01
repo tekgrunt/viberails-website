@@ -2,15 +2,17 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.viberails.io'),
   title: 'Viberails - Secure Your AI Agents',
   description: 'Secure OpenClaw and other agentic systems by intercepting, auditing and validating tool calls before they execute.',
   openGraph: {
     title: 'Viberails - Secure Your AI Agents',
     description: 'Secure OpenClaw and other agentic systems by intercepting, auditing and validating tool calls before they execute.',
     type: 'website',
+    url: 'https://www.viberails.io',
     images: [
       {
-        url: '/vr.png',
+        url: 'https://www.viberails.io/vr.png',
         width: 1200,
         height: 630,
         alt: 'Viberails - Secure Your AI Agents',
@@ -21,7 +23,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Viberails - Secure Your AI Agents',
     description: 'Secure OpenClaw and other agentic systems by intercepting, auditing and validating tool calls before they execute.',
-    images: ['/vr.png'],
+    images: ['https://www.viberails.io/vr.png'],
   },
 }
 
