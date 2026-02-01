@@ -1,4 +1,39 @@
-import Script from 'next/script'
+'use client'
+
+import { useState } from 'react'
+
+function CopyCommand({ command }: { command: string }) {
+  const [copied, setCopied] = useState(false)
+
+  const handleCopy = async () => {
+    await navigator.clipboard.writeText(command)
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2000)
+  }
+
+  return (
+    <div
+      onClick={handleCopy}
+      className="flex items-center gap-3 bg-vr-darker border border-white/20 px-5 py-4 cursor-pointer hover:border-vr-cyan/50 transition-colors group"
+    >
+      <span className="text-gray-500 select-none">$</span>
+      <code className="font-mono text-sm md:text-base text-vr-cyan flex-1 overflow-x-auto whitespace-nowrap">
+        {command}
+      </code>
+      <button className="text-gray-400 hover:text-white transition-colors flex-shrink-0">
+        {copied ? (
+          <svg className="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+        ) : (
+          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+        )}
+      </button>
+    </div>
+  )
+}
 
 export default function Home() {
   return (
@@ -59,17 +94,11 @@ export default function Home() {
             <span className="text-white">vibe</span>
             <span className="text-vr-cyan">rails</span>
           </div>
-          <a
-            href="#waitlist"
-            className="font-display font-semibold text-sm uppercase tracking-wider px-5 py-2.5 bg-vr-pink-2 hover:bg-vr-pink-3 transition-colors"
-          >
-            Join Mailing List
-          </a>
         </div>
       </nav>
 
       {/* Hero Section - Centered like LimaCharlie */}
-      <section className="relative z-10 max-w-5xl mx-auto px-6 pt-32 pb-24">
+      <section className="relative z-10 max-w-5xl mx-auto px-6 pt-40 pb-24">
         <div className="flex flex-col items-center text-center space-y-6">
           <p className="font-mono text-sm uppercase tracking-widest text-vr-cyan">
             Secure Your AI Agents
@@ -79,23 +108,12 @@ export default function Home() {
             <span className="text-gradient">rails</span>
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed max-w-3xl">
-            Secure OpenClaw and other agentic systems by intercepting and validating
+            Secure OpenClaw and other agentic systems by intercepting, auditing and validating
             tool calls before they execute. Be the guardrail between your AI and
-            the world.
+            the world. For you and your team.
           </p>
-          <div className="pt-4 flex flex-col sm:flex-row gap-4">
-            <a
-              href="#waitlist"
-              className="font-display font-semibold text-sm uppercase tracking-wider px-8 py-4 bg-vr-pink-2 hover:bg-vr-pink-3 transition-colors"
-            >
-              Join Mailing List
-            </a>
-            <a
-              href="#how-it-works"
-              className="font-display font-semibold text-sm uppercase tracking-wider px-8 py-4 border border-white/30 hover:border-white/60 transition-colors"
-            >
-              Learn More
-            </a>
+          <div className="pt-6 w-full max-w-xl">
+            <CopyCommand command="curl -fsSL https://get.viberails.io/install.sh | bash" />
           </div>
         </div>
       </section>
@@ -264,50 +282,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Waitlist Section */}
-      <section id="waitlist" className="relative z-10 border-t border-white/10 bg-vr-darker/50">
-        <div className="max-w-7xl mx-auto px-6 py-24">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <p className="font-mono text-sm uppercase tracking-widest text-vr-cyan mb-3">
-                Coming Soon
-              </p>
-              <h2 className="font-display font-bold text-3xl md:text-4xl text-white mb-4">
-                Join the waitlist
-              </h2>
-              <p className="text-lg text-gray-300">
-                Be the first to know when Viberails launches. Get early access and help shape the future of agentic security.
-              </p>
-            </div>
-            <div className="bg-white p-8">
-              <Script src="//embed.typeform.com/next/embed.js" strategy="afterInteractive" />
-              <div
-                data-tf-live="01KG8QYAVXVCDWJ1Q6GK0JGDVY"
-                style={{ minHeight: '350px' }}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer CTA */}
-      <section className="relative z-10 border-t border-white/10">
-        <div className="max-w-4xl mx-auto px-6 py-24 text-center">
-          <h2 className="font-display font-bold text-3xl md:text-4xl text-white mb-6">
-            Ready to secure your agents?
-          </h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Join the waitlist to get early access and be part of the future of agentic security.
-          </p>
-          <a
-            href="#waitlist"
-            className="inline-block font-display font-semibold text-sm uppercase tracking-wider px-8 py-4 bg-vr-pink-2 hover:bg-vr-pink-3 transition-colors"
-          >
-            Join Mailing List
-          </a>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="relative z-10 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-8">
@@ -316,9 +290,14 @@ export default function Home() {
               <span className="text-white">vibe</span>
               <span className="text-vr-cyan">rails</span>
             </div>
-            <p className="text-gray-500 text-sm">
-              A LimaCharlie project
-            </p>
+            <a href="https://limacharlie.io" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
+              <span className="text-sm">Powered by</span>
+              <img
+                src="/text_logo-white.svg"
+                alt="LimaCharlie"
+                className="h-6"
+              />
+            </a>
           </div>
         </div>
       </footer>
