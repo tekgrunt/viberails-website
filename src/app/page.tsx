@@ -173,7 +173,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="font-display font-bold text-2xl tracking-tight">
             <span className="text-white">vibe</span>
-            <span className="text-vr-cyan">rails</span>
+            <span className="text-gradient">rails</span>
           </div>
         </div>
       </nav>
