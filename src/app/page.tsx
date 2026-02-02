@@ -189,7 +189,7 @@ export default function Home() {
             <span className="text-gradient">rails</span>
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed max-w-3xl">
-            Secure OpenClaw and other agentic systems by intercepting, auditing and validating
+            Secure agentic systems by intercepting, auditing and validating
             tool calls before they execute. Be the guardrail between your AI and
             the world. For you and your team.
           </p>
@@ -328,7 +328,7 @@ export default function Home() {
             <div className="space-y-0">
               <div className="border-t border-white/20 py-5 group">
                 <h3 className="font-display font-semibold text-lg text-white group-hover:text-vr-cyan transition-colors">
-                  OpenClaw & Claude Code
+                  Claude Code & Coding Agents
                 </h3>
                 <p className="text-gray-400 text-sm mt-1">
                   Prevent unauthorized file access, command execution, and data exfiltration.

@@ -4,7 +4,7 @@ Viberails is a security layer for AI agents that intercepts, audits, and validat
 
 ## Overview
 
-Viberails secures agentic systems like OpenClaw, Claude Code, AutoGPT, and other autonomous AI agents by sitting in the blocking path of tool calls. Every action an AI agent attempts passes through Viberails first, giving you visibility and control.
+Viberails secures agentic systems like Claude Code, AutoGPT, and other autonomous AI agents by sitting in the blocking path of tool calls. Every action an AI agent attempts passes through Viberails first, giving you visibility and control.
 
 ## Key Features
 
@@ -21,7 +21,7 @@ Viberails secures agentic systems like OpenClaw, Claude Code, AutoGPT, and other
 
 ## Use Cases
 
-- **OpenClaw & Claude Code**: Prevent unauthorized file access, command execution, and data exfiltration
+- **Claude Code & Coding Agents**: Prevent unauthorized file access, command execution, and data exfiltration
 - **Autonomous Agents**: Add guardrails to AutoGPT, BabyAGI, and other autonomous systems
 - **Enterprise AI Deployments**: Implement organization-wide policies for AI tool usage
 - **MCP Server Security**: Validate requests and enforce access controls on Model Context Protocol servers
