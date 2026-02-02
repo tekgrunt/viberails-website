@@ -175,6 +175,19 @@ export default function Home() {
             <span className="text-white">vibe</span>
             <span className="text-gradient">rails</span>
           </div>
+          <a
+            href="https://limacharlie.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
+          >
+            <span className="text-sm">Powered by</span>
+            <img
+              src="/text_logo-white.svg"
+              alt="LimaCharlie"
+              className="h-5"
+            />
+          </a>
         </div>
       </nav>
 
