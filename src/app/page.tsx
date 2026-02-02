@@ -7,7 +7,7 @@ function CopyCommand() {
   const [platform, setPlatform] = useState<'unix' | 'windows'>('unix')
 
   const commands = {
-    unix: 'curl -fsSL https://get.viberails.io/install.sh | bash',
+    unix: 'bash <(curl -fsSL https://get.viberails.io/install.sh)',
     windows: 'irm https://get.viberails.io/install.ps1 | iex',
   }
 
