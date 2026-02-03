@@ -202,7 +202,7 @@ export default function Home() {
             <span className="text-gradient">rails</span>
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed max-w-3xl">
-            Secure agentic systems by intercepting, auditing and validating
+            Secure OpenClaw and other agentic systems by intercepting, auditing and validating
             tool calls before they execute. Be the guardrail between your AI and
             the world. For you and your team.
           </p>
