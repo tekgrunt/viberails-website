@@ -291,7 +291,7 @@ export default function Home() {
               Security in the critical path
             </h2>
             <p className="text-lg text-gray-300">
-              Viberails intercepts tool calls before they execute, giving you control over what your AI agents can do.
+              Viberails intercepts tool calls before they execute, giving you control over what your AI agents can do. With total roundtrip time under 50ms, you get security without the slowdown.
             </p>
           </div>
 
