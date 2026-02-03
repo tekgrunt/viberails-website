@@ -9,29 +9,31 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // LimaCharlie-inspired colors
-        'vr-dark': '#0a0f1a',
-        'vr-darker': '#060a12',
-        'vr-blue': {
-          1: '#0d1929',
-          2: '#132238',
-          3: '#1a2d4a',
-          4: '#2563eb',
-          5: '#3b82f6',
-          6: '#60a5fa',
+        // LimaCharlie color palette
+        'lc-blue': {
+          1: '#00030c',
+          2: '#00183c',
+          3: '#123c78',
+          4: '#2778c6',
+          5: '#3ca8de',
+          6: '#5adef9',
         },
-        'vr-pink': {
-          1: '#831843',
-          2: '#be185d',
-          3: '#db2777',
-          4: '#ec4899',
+        'lc-pink': {
+          2: '#f02463',
+          3: '#ff487b',
         },
-        'vr-cyan': '#22d3ee',
+        // Legacy aliases
+        'vr-dark': '#00030c',
+        'vr-darker': '#00183c',
+        'vr-cyan': '#3ca8de',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         display: ['Syne', 'system-ui', 'sans-serif'],
         mono: ['IBM Plex Mono', 'monospace'],
+      },
+      letterSpacing: {
+        'super-wide': '0.15em',
       },
     },
   },
