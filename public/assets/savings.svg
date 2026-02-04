@@ -1,0 +1,35 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="savings_30dp_1F1F1F_FILL1_wght600_GRAD-25_opsz24 1" clip-path="url(#clip0_0_38)">
+<g id="Vector" filter="url(#filter0_d_0_38)">
+<path d="M53.732 42.6523C54.3988 42.6523 54.9743 42.4135 55.4585 41.9358C55.9431 41.4585 56.1853 40.8911 56.1853 40.2337C56.1853 39.5763 55.9431 39.0088 55.4585 38.5311C54.9743 38.0538 54.3988 37.8151 53.732 37.8151C53.0651 37.8151 52.4896 38.0538 52.0054 38.5311C51.5209 39.0088 51.2786 39.5763 51.2786 40.2337C51.2786 40.8911 51.5209 41.4585 52.0054 41.9358C52.4896 42.4135 53.0651 42.6523 53.732 42.6523ZM30.0457 64C28.9296 60.2136 27.8096 56.4468 26.6858 52.6997C25.5619 48.9523 25 45.1086 25 41.1686C25 38.0118 26.1162 35.3332 28.3487 33.1327C30.5812 30.9318 33.2983 29.8314 36.5002 29.8314H47.1958C48.1995 28.6181 49.4082 27.6762 50.8219 27.0057C52.2357 26.3352 53.7401 26 55.3351 26C56.3492 26 57.2193 26.3534 57.9454 27.0603C58.6715 27.7672 59.0346 28.6205 59.0346 29.6202C59.0346 29.8958 58.9536 30.3102 58.7917 30.8635C58.6826 31.1764 58.5836 31.4837 58.4949 31.7854C58.4061 32.0872 58.3312 32.4017 58.2699 32.7289L62.1322 36.5364L67 38.069V51.2802L61.1688 53.103L57.8677 64H45.8331V60.1686H42.1157V64H30.0457Z" fill="#3CA8DE"/>
+</g>
+<g id="Polygon 1" filter="url(#filter1_d_0_38)">
+<path d="M2 45L1.56769 44.7488L1.42171 45L1.56769 45.2512L2 45ZM23.5 8.00001L23.5 7.50001L23.2123 7.50001L23.0677 7.7488L23.5 8.00001ZM66.5 8L66.9323 7.7488L66.7877 7.5L66.5 7.5L66.5 8ZM88 45L88.4323 45.2512L88.5783 45L88.4323 44.7488L88 45ZM66.5 82L66.5 82.5L66.7878 82.5L66.9323 82.2512L66.5 82ZM23.5 82L23.0677 82.2512L23.2123 82.5L23.5 82.5L23.5 82ZM42.9545 8.00001L42.9545 7.50001L42.4545 7.50001L42.4545 8.00001L42.9545 8.00001ZM42.9545 21.6959L45.8413 16.6959L40.0678 16.6959L42.9545 21.6959ZM2 45L2.43231 45.2512L23.9323 8.25121L23.5 8.00001L23.0677 7.7488L1.56769 44.7488L2 45ZM66.5 8L66.0677 8.25121L87.5677 45.2512L88 45L88.4323 44.7488L66.9323 7.7488L66.5 8ZM88 45L87.5677 44.7488L66.0677 81.7488L66.5 82L66.9323 82.2512L88.4323 45.2512L88 45ZM66.5 82L66.5 81.5L23.5 81.5L23.5 82L23.5 82.5L66.5 82.5L66.5 82ZM23.5 82L23.9323 81.7488L2.43231 44.7488L2 45L1.56769 45.2512L23.0677 82.2512L23.5 82ZM42.9545 8.00001L42.9545 8.50001L66.5 8.5L66.5 8L66.5 7.5L42.9545 7.50001L42.9545 8.00001ZM23.5 8.00001L23.5 8.50001L33.75 8.50001L33.75 8.00001L33.75 7.50001L23.5 7.50001L23.5 8.00001ZM42.9545 8.00001L42.4545 8.00001L42.4545 17.1959L42.9545 17.1959L43.4545 17.1959L43.4545 8.00001L42.9545 8.00001Z" fill="var(--stroke-0, #FF487B)"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_0_38" x="22" y="23" width="48" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="1.5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.152941 0 0 0 0 0.470588 0 0 0 0 0.776471 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_38"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_38" result="shape"/>
+</filter>
+<filter id="filter1_d_0_38" x="-1.57829" y="4.5" width="93.1566" height="81" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="1.5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.282353 0 0 0 0 0.482353 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_38"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_38" result="shape"/>
+</filter>
+<clipPath id="clip0_0_38">
+<rect width="90" height="90" fill="white"/>
+</clipPath>
+</defs>
+</svg>

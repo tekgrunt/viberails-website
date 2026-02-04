@@ -2,30 +2,18 @@
 
 import { useState } from 'react'
 
-// Figma Assets
-const imgAndrew1 = "https://www.figma.com/api/mcp/asset/431a7524-a618-4263-9200-0073c6bbc7f7"
-const imgPaulIhme1 = "https://www.figma.com/api/mcp/asset/6c184022-1818-40c7-89e9-7b3f38f98c38"
-const img15498986553551 = "https://www.figma.com/api/mcp/asset/e8cd9b9b-582a-4ed9-99bd-34bd5b89fd18"
-const imgIsolationMode = "https://www.figma.com/api/mcp/asset/44f5f164-365d-4b8e-adb4-5f42b8927513"
-const imgIsolationMode1 = "https://www.figma.com/api/mcp/asset/dab52bc7-c903-4140-b552-1569416f2747"
-const imgLine3 = "https://www.figma.com/api/mcp/asset/9b6c3834-14c7-41d4-b696-553ed7bab8a7"
-const imgLine4 = "https://www.figma.com/api/mcp/asset/b2095cc5-fcae-4d27-93c2-7aa8e6d279f5"
-const imgLine8 = "https://www.figma.com/api/mcp/asset/fa7332fd-b2a6-40b0-9ee2-f656ec75ea44"
-const imgArrowForward = "https://www.figma.com/api/mcp/asset/67f9bd5e-9c46-467c-9cee-6969b36ff562"
-const imgLine7 = "https://www.figma.com/api/mcp/asset/fe830f09-f3cb-43ce-a623-e7783551a74d"
-const imgStacks = "https://www.figma.com/api/mcp/asset/56abbcfd-e885-43c1-b7d3-71c29c43a1a6"
-const imgGroup1728 = "https://www.figma.com/api/mcp/asset/59664af7-7aaf-4acc-9957-ed3fedbb5c11"
-const imgSavings = "https://www.figma.com/api/mcp/asset/cb2c8dbb-3369-4b2d-ade7-5b5772e90207"
-const imgDesignServices = "https://www.figma.com/api/mcp/asset/114d8540-0c9d-403e-930d-4043bf9f0b50"
-const imgEllipse4 = "https://www.figma.com/api/mcp/asset/0bbcdf60-49b8-4e1d-8cd4-1391e7b16100"
-const imgEllipse19 = "https://www.figma.com/api/mcp/asset/5c28f7fe-02dd-4837-bdf4-d1c9a34b687d"
-const imgContentCopy = "https://www.figma.com/api/mcp/asset/71123bcd-cd80-4ecd-afac-2507eda97c59"
-const imgAppleSensor = "https://www.figma.com/api/mcp/asset/56d63940-352f-47e1-b10d-8df9683de8ff"
-const imgWindowsSensor = "https://www.figma.com/api/mcp/asset/afcf1c15-1a37-42d0-9180-66755528eb73"
-const imgIsolationMode2 = "https://www.figma.com/api/mcp/asset/0dbffb93-a0df-456a-9109-48ffc0bcea38"
-const imgStatMinus1 = "https://www.figma.com/api/mcp/asset/f0f1826a-c947-4037-93d5-50d3a14d298b"
-const imgLayer1 = "https://www.figma.com/api/mcp/asset/88970f67-8753-4851-8794-5851305f9407"
-const imgGroup1947 = "https://www.figma.com/api/mcp/asset/47fa091d-37d9-4a08-b3c2-30617fdcb4f7"
+// Local Assets
+const imgIsolationMode = "/assets/isolation-mode.svg"
+const imgIsolationMode1 = "/assets/isolation-mode-1.svg"
+const imgLine8 = "/assets/line-8.svg"
+const imgLine7 = "/assets/line-7.svg"
+const imgStacks = "/assets/stacks.svg"
+const imgGroup1728 = "/assets/group-1728.svg"
+const imgSavings = "/assets/savings.svg"
+const imgDesignServices = "/assets/design-services.svg"
+const imgEllipse4 = "/assets/ellipse-4.svg"
+const imgLayer1 = "/assets/layer-1.svg"
+const imgGroup1947 = "/assets/group-1947.svg"
 
 function CopyCommand() {
   const [copied, setCopied] = useState(false)
@@ -88,7 +76,7 @@ function CopyCommand() {
               onClick={() => setPlatform('unix')}
               className={`flex items-center gap-4 transition-opacity h-full ${platform === 'unix' ? 'opacity-100' : 'opacity-40'}`}
             >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
                 <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
               </svg>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
@@ -136,11 +124,6 @@ export default function Home() {
         <img alt="" className="block max-w-none size-full opacity-40" src={imgIsolationMode1} />
       </div>
 
-      {/* Decorative Lines - Upper Left */}
-      <div className="hidden lg:block absolute left-[-130px] top-[230px] w-[575px] h-[231px] pointer-events-none" style={{ transform: 'scaleX(-1)' }}>
-        <img alt="" className="block max-w-none size-full" src={imgGroup1947} />
-      </div>
-
       {/* Logo */}
       <div className="absolute h-[18px] left-[48px] top-[48px] w-[202px] z-10">
         <img alt="VibeRails" className="block max-w-none size-full" src={imgLayer1} />
@@ -159,29 +142,62 @@ export default function Home() {
 
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col items-center text-center max-w-[1164px] mx-auto px-6">
+          {/* Decorative Lines - anchored to hero content */}
+          <div className="hidden lg:block absolute left-[40px] top-[-40px] w-[575px] h-[231px] pointer-events-none" style={{ transform: 'scaleX(-1) translateX(60%)' }}>
+            <img alt="" className="block max-w-none size-full" src={imgGroup1947} />
+          </div>
           {/* Surhead */}
           <p className="font-['IBM_Plex_Mono'] font-medium text-[#3ca8de] text-[18px] tracking-[2.7px] uppercase mb-[18px]">
-            operational guardrails for teams
+            agentic guardrails for teams
           </p>
           {/* Main Title */}
           <h1
             className="font-['Syne'] font-bold text-[36px] md:text-[48px] lg:text-[60px] leading-[42px] md:leading-[56px] lg:leading-[72px] tracking-[-0.6px] text-center mb-[18px] bg-clip-text text-transparent"
             style={{
               backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #3CA8DE 50%, #FF487B 100%)',
-              backgroundPosition: '0 10px',
+              backgroundPosition: '0 5px',
               filter: 'drop-shadow(0px 0px 36px rgba(90,222,249,0.5))',
               fontFeatureSettings: "'lnum' 1, 'pnum' 1"
             }}
           >
-            Secure your AI agents.
+            Govern AI agent operations
           </h1>
           {/* Description */}
           <p className="font-['Inter'] font-light text-[18px] leading-[24px] text-white text-center max-w-[960px] mb-[48px]" style={{ textShadow: '0px 6px 36px rgba(0,24,60,0.25)' }}>
-            VibeRails allows you to secure agentic systems by intercepting, auditing and validating tool calls<br />
-            before they execute. Be the guardrail between your AI and the world. For you and your team.
+            Viberails intercepts, audits and validates tool calls from OpenClaw and other agentic systems before execution. The guardrail between your AI and the world for individual developers and security teams.
           </p>
           {/* Command Box */}
           <CopyCommand />
+        </div>
+      </div>
+
+      {/* Feature highlights */}
+      <div className="hidden xl:block pt-0 pb-[60px] xl:pt-[20px] xl:pb-[80px] max-w-[1440px] mx-auto px-6 md:px-12 xl:px-[138px]">
+        <div className="flex justify-between font-['IBM_Plex_Mono'] text-[14px] tracking-[2px] uppercase">
+          <span
+            className="bg-clip-text text-transparent"
+            style={{ backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 15%, #3CA8DE 45%, #FF487B 100%)', backgroundSize: '100% 120%', backgroundPosition: '0 0' }}
+          >
+            Free, no credit card required
+          </span>
+          <span
+            className="bg-clip-text text-transparent"
+            style={{ backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 15%, #3CA8DE 45%, #FF487B 100%)', backgroundSize: '100% 120%', backgroundPosition: '0 0' }}
+          >
+            &lt;50ms Latency
+          </span>
+          <span
+            className="bg-clip-text text-transparent"
+            style={{ backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 15%, #3CA8DE 45%, #FF487B 100%)', backgroundSize: '100% 120%', backgroundPosition: '0 0' }}
+          >
+            5 minute setup
+          </span>
+          <span
+            className="bg-clip-text text-transparent"
+            style={{ backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 15%, #3CA8DE 45%, #FF487B 100%)', backgroundSize: '100% 120%', backgroundPosition: '0 0' }}
+          >
+            No sales demo required
+          </span>
         </div>
       </div>
 
@@ -195,16 +211,15 @@ export default function Home() {
           className="font-['Syne'] font-bold text-[30px] md:text-[38px] lg:text-[45px] leading-[36px] md:leading-[42px] lg:leading-[48px] tracking-[-0.45px] mb-[6px] bg-clip-text text-transparent"
           style={{
             backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #3CA8DE 50%, #FF487B 100%)',
-            backgroundSize: '100% 200%',
-            backgroundPosition: '0 0',
+            backgroundPosition: '0 5px',
             filter: 'drop-shadow(0px 0px 24px rgba(90,222,249,0.35))',
             fontFeatureSettings: "'lnum' 1, 'pnum' 1"
           }}
         >
-          Say goodbye to uncontrolled AI agents
+          Say goodbye to ungoverned AI performing risky operations
         </h2>
         <p className="font-['Inter'] font-light text-[18px] md:text-[24px] leading-[24px] md:leading-[30px] tracking-[-0.24px] text-white mb-[36px] lg:mb-[60px]">
-          And say hello to visibility, control, and security for your agentic systems
+          And say hello to transparency, control, and accountability for your agentic operators
         </p>
 
         {/* Features Grid */}
@@ -218,7 +233,7 @@ export default function Home() {
               Inline Security
             </h3>
             <p className="font-['Inter'] font-light text-[18px] leading-[24px] text-white">
-              Sits in the blocking path of tool calls, giving you real-time control.
+              Configure which operations require approval, are AI-accessible, or remain manual.
             </p>
           </div>
 
@@ -239,7 +254,7 @@ export default function Home() {
               Full Visibility
             </h3>
             <p className="font-['Inter'] font-light text-[18px] leading-[24px] text-white">
-              See every tool call, every parameter, and every response.
+              Inspect every tool call's parameters and responses. Query historical execution data.
             </p>
           </div>
 
@@ -252,7 +267,7 @@ export default function Home() {
               Policy Enforcement
             </h3>
             <p className="font-['Inter'] font-light text-[18px] leading-[24px] text-white">
-              Define what's allowed. Block dangerous operations.
+              Write rules to block file deletions, restrict endpoints, or require human approval.
             </p>
           </div>
 
@@ -265,7 +280,7 @@ export default function Home() {
               Complete Audit Trail
             </h3>
             <p className="font-['Inter'] font-light text-[18px] leading-[24px] text-white">
-              Log and audit all agentic operations at scale.
+              See execution logs showing which agents called which tools, when, and how.
             </p>
           </div>
         </div>
@@ -290,7 +305,7 @@ export default function Home() {
           Security in the critical path
         </h2>
         <p className="font-['Inter'] font-light text-[18px] md:text-[24px] leading-[24px] md:leading-[30px] tracking-[-0.24px] text-white mb-[36px] lg:mb-[60px]">
-          Viberails intercepts tool calls before they execute, giving you control over what your AI agents can do. With total roundtrip time under 50ms, you get security without the slowdown.
+          Viberails intercepts specified tool calls before they execute, giving you control over what your AI agents can do. With latency under 50ms, you get security without the slowdown.
         </p>
 
         {/* Steps */}
@@ -300,7 +315,7 @@ export default function Home() {
               Intercept
             </h3>
             <p className="font-['Inter'] font-light text-[18px] leading-[24px] text-white">
-              VibeRails sits between your AI agent and its tools. Every tool call passes through our security layer first.
+              Sit in the execution path between agent and tools. No tool call reaches your infrastructure without passing through Viberails first.
             </p>
           </div>
           <div>
@@ -308,7 +323,7 @@ export default function Home() {
               Validate
             </h3>
             <p className="font-['Inter'] font-light text-[18px] leading-[24px] text-white">
-              Apply your security policies in real-time. Check parameters, verify permissions, and assess risk before execution.
+              Write policies as code to check file paths, verify API endpoints, or flag suspicious parameters before execution.
             </p>
           </div>
           <div>
@@ -316,7 +331,7 @@ export default function Home() {
               Control
             </h3>
             <p className="font-['Inter'] font-light text-[18px] leading-[24px] text-white">
-              Allow, block, or modify tool calls based on your policies. Maintain full control over what your agents can do.
+              Auto-approve safe operations, block dangerous ones, or route sensitive calls to human approval queues.
             </p>
           </div>
         </div>
@@ -405,7 +420,7 @@ export default function Home() {
             className="font-['Syne'] font-bold text-[30px] md:text-[38px] lg:text-[45px] leading-[36px] md:leading-[42px] lg:leading-[48px] tracking-[-0.45px] bg-clip-text text-transparent"
             style={{
               backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #3CA8DE 50%, #FF487B 100%)',
-              backgroundPosition: '0 15px',
+              backgroundPosition: '0 5px',
               filter: 'drop-shadow(0px 0px 24px rgba(90,222,249,0.35))',
               fontFeatureSettings: "'lnum' 1, 'pnum' 1"
             }}
@@ -417,10 +432,13 @@ export default function Home() {
           </p>
           <a
             href="#"
-            className="flex items-center justify-center h-[60px] w-[208px] border-2 border-[#ff487b] hover:bg-[#ff487b]/10 transition-colors"
+            className="relative flex items-center justify-center h-[60px] w-[208px] p-[2px] hover:opacity-90 transition-opacity"
+            style={{ background: 'linear-gradient(205deg, #FFFFFF 0%, #3CA8DE 50%, #FF487B 100%)' }}
           >
-            <span className="font-['Syne'] font-bold text-[18px] leading-[18px] tracking-[0.9px] uppercase text-white" style={{ fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}>
-              start free
+            <span className="flex items-center justify-center w-full h-full bg-[#00030c]">
+              <span className="font-['Syne'] font-bold text-[18px] leading-[18px] tracking-[0.9px] uppercase text-white" style={{ fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}>
+                start free
+              </span>
             </span>
           </a>
         </div>

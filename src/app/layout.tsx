@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     url: 'https://www.viberails.io',
     images: [
       {
-        url: 'https://www.viberails.io/vr.png',
+        url: 'https://www.viberails.io/og-viberails.png',
         width: 1200,
         height: 630,
         alt: 'Viberails - Secure Your AI Agents',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Viberails - Secure Your AI Agents',
     description: 'Secure agentic systems by intercepting, auditing and validating tool calls before they execute.',
-    images: ['https://www.viberails.io/vr.png'],
+    images: ['https://www.viberails.io/og-viberails.png'],
   },
 }
 
