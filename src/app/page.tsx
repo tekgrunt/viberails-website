@@ -125,10 +125,25 @@ export default function Home() {
         <img alt="" className="block max-w-none size-full opacity-40" src={imgIsolationMode1} />
       </div>
 
-      {/* Logo */}
-      <div className="absolute h-[18px] left-[48px] top-[48px] w-[202px] z-10">
-        <img alt="VibeRails" className="block max-w-none size-full" src={imgLayer1} />
-      </div>
+      {/* Header */}
+      <header className="absolute top-[48px] left-0 right-0 z-10 px-[48px] flex items-center justify-between">
+        {/* Logo */}
+        <div className="h-[18px] w-[202px]">
+          <img alt="VibeRails" className="block max-w-none size-full" src={imgLayer1} />
+        </div>
+        {/* Nav */}
+        <nav className="hidden md:flex items-center gap-[36px] font-['Syne'] font-bold text-[12px] text-white tracking-[0.6px] uppercase" style={{ fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}>
+          <a href="https://github.com/refractionPOINT/viberails" target="_blank" rel="noopener noreferrer" className="leading-[15px] hover:text-[#3ca8de] transition-colors">
+            github
+          </a>
+          <a href="https://community.limacharlie.com/" target="_blank" rel="noopener noreferrer" className="leading-[15px] hover:text-[#3ca8de] transition-colors">
+            support
+          </a>
+          <a href="https://limacharlie.io/contact" target="_blank" rel="noopener noreferrer" className="leading-[15px] hover:text-[#3ca8de] transition-colors">
+            contact us
+          </a>
+        </nav>
+      </header>
 
       {/* Hero Section */}
       <div className="relative pt-[140px] lg:pt-[259px] pb-[60px] lg:pb-[100px]">
