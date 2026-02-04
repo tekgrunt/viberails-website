@@ -437,12 +437,46 @@ export default function Home() {
           >
             <span className="flex items-center justify-center w-full h-full bg-[#00030c]">
               <span className="font-['Syne'] font-bold text-[18px] leading-[18px] tracking-[0.9px] uppercase text-white" style={{ fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}>
-                start free
+                free install
               </span>
             </span>
           </a>
         </div>
       </div>
+
+      {/* Footer */}
+      <footer className="relative mt-[60px] lg:mt-[100px]">
+        {/* Horizontal line */}
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[138px]">
+          <div className="w-full h-[1px] bg-white/20" />
+        </div>
+
+        {/* Footer content */}
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[138px] py-[24px] flex flex-col md:flex-row items-center justify-between gap-4">
+          {/* Copyright */}
+          <p className="font-['IBM_Plex_Mono'] text-[12px] text-white/40 tracking-[0.5px]">
+            Copyright © LimaCharlie 2026
+          </p>
+
+          {/* Powered by */}
+          <a
+            href="https://limacharlie.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-white hover:text-white/80 transition-colors"
+          >
+            {/* LimaCharlie icon */}
+            <svg width="24" height="17" viewBox="0 0 43 30" fill="currentColor">
+              <path d="M20.472 5.51634L14.9676 0L0 15L14.9676 30L20.472 24.4902L11.0023 15L20.472 5.51634Z"/>
+              <path d="M29.1168 19.9869C26.358 19.9869 24.121 17.7451 24.121 14.9804C24.121 12.2157 26.358 9.97386 29.1168 9.97386C31.4451 9.97386 33.4081 11.5752 33.956 13.7386H42.8191L29.1037 0L14.1361 15L29.1037 30L42.8257 16.2484H33.9494C33.3886 18.3987 31.4385 19.9869 29.1168 19.9869Z"/>
+            </svg>
+            <span className="font-['Inter'] text-[15px] leading-[18px]">
+              <span className="font-light">Powered by </span>
+              <span className="font-bold">LimaCharlie</span>
+            </span>
+          </a>
+        </div>
+      </footer>
     </div>
   )
 }
