@@ -14,6 +14,7 @@ const imgDesignServices = "/assets/design-services.svg"
 const imgEllipse4 = "/assets/ellipse-4.svg"
 const imgLayer1 = "/assets/layer-1.svg"
 const imgGroup1947 = "/assets/group-1947.svg"
+const imgExplainer = "/assets/explainer.png"
 
 function CopyCommand() {
   const [copied, setCopied] = useState(false)
@@ -120,7 +121,7 @@ export default function Home() {
       </div>
 
       {/* Background Pattern - Middle Right */}
-      <div className="hidden lg:block absolute h-[597px] left-[538px] top-[1886px] w-[953px] pointer-events-none">
+      <div className="hidden lg:block absolute h-[597px] left-[538px] top-[1736px] w-[953px] pointer-events-none">
         <img alt="" className="block max-w-none size-full opacity-40" src={imgIsolationMode1} />
       </div>
 
@@ -307,31 +308,37 @@ export default function Home() {
           Viberails intercepts specified tool calls before they execute, giving you control over what your AI agents can do. With latency under 50ms, you get security without the slowdown.
         </p>
 
-        {/* Steps */}
-        <div className="flex flex-col gap-[48px] max-w-[580px]">
-          <div>
-            <h3 className="font-['Syne'] font-semibold text-[27px] md:text-[36px] leading-[30px] md:leading-[39px] tracking-[-0.36px] text-white mb-[12px]" style={{ fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}>
-              Intercept
-            </h3>
-            <p className="font-['Inter'] font-light text-[18px] leading-[24px] text-white">
-              Sit in the execution path between agent and tools. No tool call reaches your infrastructure without passing through Viberails first.
-            </p>
+        {/* Steps and Explainer */}
+        <div className="flex flex-col lg:flex-row gap-[48px] lg:gap-[60px] items-start">
+          <div className="flex flex-col gap-[48px] max-w-[580px]">
+            <div>
+              <h3 className="font-['Syne'] font-semibold text-[27px] md:text-[36px] leading-[30px] md:leading-[39px] tracking-[-0.36px] text-white mb-[12px]" style={{ fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}>
+                Intercept
+              </h3>
+              <p className="font-['Inter'] font-light text-[18px] leading-[24px] text-white">
+                Sit in the execution path between agent and tools. No tool call reaches your infrastructure without passing through Viberails first.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-['Syne'] font-semibold text-[27px] md:text-[36px] leading-[30px] md:leading-[39px] tracking-[-0.36px] text-white mb-[12px]" style={{ fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}>
+                Validate
+              </h3>
+              <p className="font-['Inter'] font-light text-[18px] leading-[24px] text-white">
+                Write policies as code to check file paths, verify API endpoints, or flag suspicious parameters before execution.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-['Syne'] font-semibold text-[27px] md:text-[36px] leading-[30px] md:leading-[39px] tracking-[-0.36px] text-white mb-[12px]" style={{ fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}>
+                Control
+              </h3>
+              <p className="font-['Inter'] font-light text-[18px] leading-[24px] text-white">
+                Auto-approve safe operations, block dangerous ones, or route sensitive calls to human approval queues.
+              </p>
+            </div>
           </div>
-          <div>
-            <h3 className="font-['Syne'] font-semibold text-[27px] md:text-[36px] leading-[30px] md:leading-[39px] tracking-[-0.36px] text-white mb-[12px]" style={{ fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}>
-              Validate
-            </h3>
-            <p className="font-['Inter'] font-light text-[18px] leading-[24px] text-white">
-              Write policies as code to check file paths, verify API endpoints, or flag suspicious parameters before execution.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-['Syne'] font-semibold text-[27px] md:text-[36px] leading-[30px] md:leading-[39px] tracking-[-0.36px] text-white mb-[12px]" style={{ fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}>
-              Control
-            </h3>
-            <p className="font-['Inter'] font-light text-[18px] leading-[24px] text-white">
-              Auto-approve safe operations, block dangerous ones, or route sensitive calls to human approval queues.
-            </p>
+          {/* Explainer Image */}
+          <div className="hidden xl:block flex-1 relative z-10 mt-[-80px]">
+            <img alt="Viberails explainer diagram" className="w-full h-auto" src={imgExplainer} />
           </div>
         </div>
       </div>
