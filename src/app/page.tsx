@@ -120,7 +120,7 @@ export default function Home() {
       </div>
 
       {/* Background Pattern - Middle Right */}
-      <div className="hidden lg:block absolute h-[597px] left-[538px] top-[1396px] w-[953px] pointer-events-none">
+      <div className="hidden lg:block absolute h-[597px] left-[538px] top-[1686px] w-[953px] pointer-events-none">
         <img alt="" className="block max-w-none size-full opacity-40" src={imgIsolationMode1} />
       </div>
 
@@ -208,7 +208,7 @@ export default function Home() {
           why viberails
         </p>
         <h2
-          className="font-['Syne'] font-bold text-[30px] md:text-[38px] lg:text-[45px] leading-[36px] md:leading-[42px] lg:leading-[48px] tracking-[-0.45px] mb-[6px] bg-clip-text text-transparent"
+          className="font-['Syne'] font-semibold text-[30px] md:text-[36px] leading-[36px] md:leading-[39px] tracking-[-0.36px] mb-[6px] bg-clip-text text-transparent"
           style={{
             backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #3CA8DE 50%, #FF487B 100%)',
             backgroundPosition: '0 5px',
@@ -295,9 +295,8 @@ export default function Home() {
         <h2
           className="font-['Syne'] font-bold text-[30px] md:text-[38px] lg:text-[45px] leading-[36px] md:leading-[42px] lg:leading-[48px] tracking-[-0.45px] mb-[6px] bg-clip-text text-transparent"
           style={{
-            backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #3CA8DE 50%, #FF487B 100%)',
-            backgroundSize: '100% 200%',
-            backgroundPosition: '0 0',
+            backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 20%, #3CA8DE 60%, #FF487B 100%)',
+            backgroundPosition: '0 5px',
             filter: 'drop-shadow(0px 0px 24px rgba(90,222,249,0.35))',
             fontFeatureSettings: "'lnum' 1, 'pnum' 1"
           }}
@@ -311,7 +310,7 @@ export default function Home() {
         {/* Steps */}
         <div className="flex flex-col gap-[48px] max-w-[580px]">
           <div>
-            <h3 className="font-['Syne'] font-semibold text-[27px] leading-[30px] tracking-[-0.27px] text-white mb-[12px]" style={{ fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}>
+            <h3 className="font-['Syne'] font-semibold text-[27px] md:text-[36px] leading-[30px] md:leading-[39px] tracking-[-0.36px] text-white mb-[12px]" style={{ fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}>
               Intercept
             </h3>
             <p className="font-['Inter'] font-light text-[18px] leading-[24px] text-white">
@@ -319,7 +318,7 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <h3 className="font-['Syne'] font-semibold text-[27px] leading-[30px] tracking-[-0.27px] text-white mb-[12px]" style={{ fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}>
+            <h3 className="font-['Syne'] font-semibold text-[27px] md:text-[36px] leading-[30px] md:leading-[39px] tracking-[-0.36px] text-white mb-[12px]" style={{ fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}>
               Validate
             </h3>
             <p className="font-['Inter'] font-light text-[18px] leading-[24px] text-white">
@@ -327,7 +326,7 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <h3 className="font-['Syne'] font-semibold text-[27px] leading-[30px] tracking-[-0.27px] text-white mb-[12px]" style={{ fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}>
+            <h3 className="font-['Syne'] font-semibold text-[27px] md:text-[36px] leading-[30px] md:leading-[39px] tracking-[-0.36px] text-white mb-[12px]" style={{ fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}>
               Control
             </h3>
             <p className="font-['Inter'] font-light text-[18px] leading-[24px] text-white">
@@ -339,76 +338,91 @@ export default function Home() {
 
       {/* Use Cases Section */}
       <div className="relative pt-[60px] pb-[60px] lg:pt-[100px] lg:pb-[100px] max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[138px]">
-        <div className="flex flex-col lg:flex-row gap-[35px] items-start">
-          {/* Left Column */}
-          <div className="w-full lg:w-[565px] flex-shrink-0 flex flex-col gap-[18px]">
-            <div className="flex flex-col gap-[12px]">
-              <p className="font-['IBM_Plex_Mono'] font-medium text-[#3ca8de] text-[18px] tracking-[2.7px] uppercase">
-                use cases
-              </p>
-              <h2
-                className="font-['Syne'] font-bold text-[30px] md:text-[38px] lg:text-[45px] tracking-[-0.45px]"
-                style={{
-                  filter: 'drop-shadow(0px 0px 24px rgba(90,222,249,0.35))',
-                  fontFeatureSettings: "'lnum' 1, 'pnum' 1"
-                }}
-              >
-                <span
-                  className="block leading-[36px] md:leading-[42px] lg:leading-[48px] bg-clip-text text-transparent"
-                  style={{
-                    backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #3CA8DE 50%, #FF487B 100%)',
-                    backgroundSize: '100% 130%',
-                    backgroundPosition: '0 0',
-                  }}
-                >
-                  Built for
-                </span>
-                <span
-                  className="block leading-[36px] md:leading-[42px] lg:leading-[48px] bg-clip-text text-transparent"
-                  style={{
-                    backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #3CA8DE 50%, #FF487B 100%)',
-                    backgroundSize: '100% 130%',
-                    backgroundPosition: '0 0',
-                  }}
-                >
-                  agentic security
-                </span>
-              </h2>
-            </div>
-            <p className="font-['Inter'] font-light text-[18px] md:text-[24px] leading-[24px] md:leading-[30px] tracking-[-0.24px] text-white">
-              Secure any system where AI agents interact with tools, APIs, or infrastructure.
+        {/* Header */}
+        <div className="flex flex-col gap-[12px] mb-[35px]">
+          <p className="font-['IBM_Plex_Mono'] font-medium text-[#3ca8de] text-[18px] tracking-[2.7px] uppercase">
+            use cases
+          </p>
+          <h2
+            className="font-['Syne'] font-bold text-[30px] md:text-[38px] lg:text-[45px] leading-[36px] md:leading-[42px] lg:leading-[48px] tracking-[-0.45px] bg-clip-text text-transparent"
+            style={{
+              backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 20%, #3CA8DE 60%, #FF487B 100%)',
+              backgroundPosition: '0 5px',
+              filter: 'drop-shadow(0px 0px 24px rgba(90,222,249,0.35))',
+              fontFeatureSettings: "'lnum' 1, 'pnum' 1"
+            }}
+          >
+            Built for agentic security
+          </h2>
+          <p className="font-['Inter'] font-light text-[18px] md:text-[24px] leading-[24px] md:leading-[30px] tracking-[-0.24px] text-white max-w-[864px]">
+            Secure any system where AI agents interact with tools, APIs, or infrastructure.
+          </p>
+        </div>
+
+        {/* Use Cases Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[35px]">
+          {/* Use Case 1 */}
+          <div className="flex flex-col gap-[12px]">
+            <p
+              className="font-['Syne'] font-bold text-[72px] leading-[72px] tracking-[-0.72px] text-[#00030c]"
+              style={{ textShadow: '0 0 30px #3ca8de', fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}
+            >
+              1
+            </p>
+            <h3 className="font-['Syne'] font-semibold text-[24px] leading-[27px] tracking-[-0.24px] text-white" style={{ fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}>
+              Claude Code & Coding Agents
+            </h3>
+            <p className="font-['Inter'] font-light text-[18px] leading-[24px] text-white">
+              Prevent unauthorized file access, command execution, and data exfiltration.
             </p>
           </div>
 
-          {/* Right Column - Use Cases List */}
-          <div className="flex-1 flex flex-col gap-[12px]">
-            {/* Top border */}
-            <div className="h-0 relative w-full">
-              <div className="absolute inset-[-6px_0_0_0]">
-                <img alt="" className="block max-w-none size-full" src={imgLine8} />
-              </div>
-            </div>
+          {/* Use Case 2 */}
+          <div className="flex flex-col gap-[12px]">
+            <p
+              className="font-['Syne'] font-bold text-[72px] leading-[72px] tracking-[-0.72px] text-[#00030c]"
+              style={{ textShadow: '0 0 30px #3ca8de', fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}
+            >
+              2
+            </p>
+            <h3 className="font-['Syne'] font-semibold text-[24px] leading-[27px] tracking-[-0.24px] text-white" style={{ fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}>
+              Autonomous Agents
+            </h3>
+            <p className="font-['Inter'] font-light text-[18px] leading-[24px] text-white">
+              Add guardrails to AutoGPT, BabyAGI, and other autonomous systems.
+            </p>
+          </div>
 
-            {/* Use Case Items */}
-            {[
-              'Claude Code & Coding Agents',
-              'Autonomous Agents',
-              'Enterprise AI Deployments',
-              'MCP Server Security'
-            ].map((item) => (
-              <div key={item} className="flex flex-col gap-[12px]">
-                <a href="#" className="flex gap-[6px] items-center group">
-                  <p className="font-['Syne'] font-bold text-[18px] leading-[18px] tracking-[0.9px] uppercase text-[#3ca8de] group-hover:text-[#5adef9] transition-colors" style={{ fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}>
-                    {item}
-                  </p>
-                </a>
-                <div className="h-0 relative w-full">
-                  <div className="absolute inset-[-1px_0_0_0]">
-                    <img alt="" className="block max-w-none size-full" src={imgLine7} />
-                  </div>
-                </div>
-              </div>
-            ))}
+          {/* Use Case 3 */}
+          <div className="flex flex-col gap-[12px]">
+            <p
+              className="font-['Syne'] font-bold text-[72px] leading-[72px] tracking-[-0.72px] text-[#00030c]"
+              style={{ textShadow: '0 0 30px #3ca8de', fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}
+            >
+              3
+            </p>
+            <h3 className="font-['Syne'] font-semibold text-[24px] leading-[27px] tracking-[-0.24px] text-white" style={{ fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}>
+              Enterprise AI Deployments
+            </h3>
+            <p className="font-['Inter'] font-light text-[18px] leading-[24px] text-white">
+              Implement organization-wide policies for AI tool usage.
+            </p>
+          </div>
+
+          {/* Use Case 4 */}
+          <div className="flex flex-col gap-[12px]">
+            <p
+              className="font-['Syne'] font-bold text-[72px] leading-[72px] tracking-[-0.72px] text-[#00030c]"
+              style={{ textShadow: '0 0 30px #3ca8de', fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}
+            >
+              4
+            </p>
+            <h3 className="font-['Syne'] font-semibold text-[24px] leading-[27px] tracking-[-0.24px] text-white" style={{ fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}>
+              MCP Server Security
+            </h3>
+            <p className="font-['Inter'] font-light text-[18px] leading-[24px] text-white">
+              Validate requests and enforce access controls on MCP servers.
+            </p>
           </div>
         </div>
       </div>
