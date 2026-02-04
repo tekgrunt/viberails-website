@@ -120,7 +120,7 @@ export default function Home() {
       </div>
 
       {/* Background Pattern - Middle Right */}
-      <div className="hidden lg:block absolute h-[597px] left-[538px] top-[1686px] w-[953px] pointer-events-none">
+      <div className="hidden lg:block absolute h-[597px] left-[538px] top-[1886px] w-[953px] pointer-events-none">
         <img alt="" className="block max-w-none size-full opacity-40" src={imgIsolationMode1} />
       </div>
 
@@ -148,7 +148,7 @@ export default function Home() {
           </div>
           {/* Surhead */}
           <p className="font-['IBM_Plex_Mono'] font-medium text-[#3ca8de] text-[18px] tracking-[2.7px] uppercase mb-[18px]">
-            agentic guardrails for teams
+            Guardrails for agentic AI operations
           </p>
           {/* Main Title */}
           <h1
@@ -160,7 +160,7 @@ export default function Home() {
               fontFeatureSettings: "'lnum' 1, 'pnum' 1"
             }}
           >
-            Govern AI agent operations
+            Intercept and control<br />AI agent activity
           </h1>
           {/* Description */}
           <p className="font-['Inter'] font-light text-[18px] leading-[24px] text-white text-center max-w-[960px] mb-[48px]" style={{ textShadow: '0px 6px 36px rgba(0,24,60,0.25)' }}>

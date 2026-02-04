@@ -4,10 +4,10 @@ import './globals.css'
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.viberails.io'),
   title: 'Viberails - Secure Your AI Agents',
-  description: 'Secure agentic systems by intercepting, auditing and validating tool calls before they execute.',
+  description: 'Viberails intercepts, audits and validates tool calls from OpenClaw and other agentic systems before execution.',
   openGraph: {
     title: 'Viberails - Secure Your AI Agents',
-    description: 'Secure agentic systems by intercepting, auditing and validating tool calls before they execute.',
+    description: 'Viberails intercepts, audits and validates tool calls from OpenClaw and other agentic systems before execution.',
     type: 'website',
     url: 'https://www.viberails.io',
     images: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Viberails - Secure Your AI Agents',
-    description: 'Secure agentic systems by intercepting, auditing and validating tool calls before they execute.',
+    description: 'Viberails intercepts, audits and validates tool calls from OpenClaw and other agentic systems before execution.',
     images: ['https://www.viberails.io/og-viberails.png'],
   },
 }
