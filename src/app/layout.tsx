@@ -41,13 +41,13 @@ export default function RootLayout({
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5TVL6K7X');`}
+})(window,document,'script','dataLayer','GTM-TJRD9PG');`}
         </Script>
       </head>
       <body className="font-sans antialiased">
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-5TVL6K7X"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TJRD9PG"
             height="0"
             width="0"
             style={{ display: 'none', visibility: 'hidden' }}
