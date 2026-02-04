@@ -180,7 +180,7 @@ export default function Home() {
           </h1>
           {/* Description */}
           <p className="font-['Inter'] font-light text-[18px] leading-[24px] text-white text-center max-w-[960px] mb-[48px]" style={{ textShadow: '0px 6px 36px rgba(0,24,60,0.25)' }}>
-            Viberails intercepts, audits and validates tool calls from OpenClaw and other agentic systems before execution. The guardrail between your AI and the world for individual developers and security teams.
+            Viberails intercepts, audits and validates tool calls from OpenClaw and other agentic systems before execution. It's the guardrail between your AI and the world for individual developers and security teams.
           </p>
           {/* Command Box */}
           <CopyCommand />
