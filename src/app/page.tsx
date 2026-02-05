@@ -14,7 +14,7 @@ const imgDesignServices = "/assets/design-services.svg"
 const imgEllipse4 = "/assets/ellipse-4.svg"
 const imgLayer1 = "/assets/layer-1.svg"
 const imgGroup1947 = "/assets/group-1947.svg"
-const imgExplainer = "/assets/explainer.png"
+const imgExplainer = "/assets/graph.png"
 
 function CopyCommand() {
   const [copied, setCopied] = useState(false)
@@ -51,7 +51,7 @@ function CopyCommand() {
               </div>
               <div className="relative size-[30px] flex-shrink-0">
                 <svg className="absolute inset-0" width="30" height="30" viewBox="0 0 30 30">
-                  <circle cx="15" cy="15" r="14" stroke="rgba(255,255,255,0.4)" strokeWidth="1" fill="none" />
+                  <circle cx="15" cy="15" r="14" stroke="#3ca8de" strokeWidth="1" fill="none" />
                 </svg>
                 <div className="absolute inset-0 flex items-center justify-center">
                   {copied ? (
@@ -59,7 +59,7 @@ function CopyCommand() {
                       <path d="M5 13l4 4L19 7" />
                     </svg>
                   ) : (
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3ca8de" strokeWidth="2">
                       <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
                       <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" />
                     </svg>
@@ -96,7 +96,7 @@ function CopyCommand() {
           </div>
           <a href="#" className="flex gap-[6px] items-center">
             <span className="font-['IBM_Plex_Mono'] font-medium text-[#3ca8de] text-[12px] tracking-[1.8px] uppercase">
-              sign up for free
+              Get started for free
             </span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3ca8de" strokeWidth="2" className="-rotate-90">
               <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -164,13 +164,13 @@ export default function Home() {
           </div>
           {/* Surhead */}
           <p className="font-['IBM_Plex_Mono'] font-medium text-[#3ca8de] text-[18px] tracking-[2.7px] uppercase mb-[18px]">
-            Guardrails for agentic AI operations
+            Security for AI agents
           </p>
           {/* Main Title */}
           <h1
             className="font-['Syne'] font-bold text-[36px] md:text-[48px] lg:text-[60px] leading-[42px] md:leading-[56px] lg:leading-[72px] tracking-[-0.6px] text-center mb-[18px] bg-clip-text text-transparent"
             style={{
-              backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #3CA8DE 50%, #FF487B 100%)',
+              backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 30%, #3CA8DE 70%, #FF487B 100%)',
               backgroundPosition: '0 5px',
               filter: 'drop-shadow(0px 0px 36px rgba(90,222,249,0.5))',
               fontFeatureSettings: "'lnum' 1, 'pnum' 1"
@@ -192,25 +192,25 @@ export default function Home() {
         <div className="flex justify-between font-['IBM_Plex_Mono'] text-[14px] tracking-[2px] uppercase">
           <span
             className="bg-clip-text text-transparent"
-            style={{ backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 15%, #3CA8DE 45%, #FF487B 100%)', backgroundSize: '100% 120%', backgroundPosition: '0 0' }}
+            style={{ backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 35%, #3CA8DE 70%, #FF487B 100%)', backgroundSize: '100% 120%', backgroundPosition: '0 0' }}
           >
             Free, no credit card required
           </span>
           <span
             className="bg-clip-text text-transparent"
-            style={{ backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 15%, #3CA8DE 45%, #FF487B 100%)', backgroundSize: '100% 120%', backgroundPosition: '0 0' }}
+            style={{ backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 35%, #3CA8DE 70%, #FF487B 100%)', backgroundSize: '100% 120%', backgroundPosition: '0 0' }}
           >
             &lt;50ms Latency
           </span>
           <span
             className="bg-clip-text text-transparent"
-            style={{ backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 15%, #3CA8DE 45%, #FF487B 100%)', backgroundSize: '100% 120%', backgroundPosition: '0 0' }}
+            style={{ backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 35%, #3CA8DE 70%, #FF487B 100%)', backgroundSize: '100% 120%', backgroundPosition: '0 0' }}
           >
             5 minute setup
           </span>
           <span
             className="bg-clip-text text-transparent"
-            style={{ backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 15%, #3CA8DE 45%, #FF487B 100%)', backgroundSize: '100% 120%', backgroundPosition: '0 0' }}
+            style={{ backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 35%, #3CA8DE 70%, #FF487B 100%)', backgroundSize: '100% 120%', backgroundPosition: '0 0' }}
           >
             No sales demo required
           </span>
@@ -226,7 +226,7 @@ export default function Home() {
         <h2
           className="font-['Syne'] font-semibold text-[30px] md:text-[36px] leading-[36px] md:leading-[39px] tracking-[-0.36px] mb-[6px] bg-clip-text text-transparent"
           style={{
-            backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #3CA8DE 50%, #FF487B 100%)',
+            backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 30%, #3CA8DE 70%, #FF487B 100%)',
             backgroundPosition: '0 5px',
             filter: 'drop-shadow(0px 0px 24px rgba(90,222,249,0.35))',
             fontFeatureSettings: "'lnum' 1, 'pnum' 1"
@@ -311,7 +311,7 @@ export default function Home() {
         <h2
           className="font-['Syne'] font-bold text-[30px] md:text-[38px] lg:text-[45px] leading-[36px] md:leading-[42px] lg:leading-[48px] tracking-[-0.45px] mb-[6px] bg-clip-text text-transparent"
           style={{
-            backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 20%, #3CA8DE 60%, #FF487B 100%)',
+            backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 40%, #3CA8DE 80%, #FF487B 100%)',
             backgroundPosition: '0 5px',
             filter: 'drop-shadow(0px 0px 24px rgba(90,222,249,0.35))',
             fontFeatureSettings: "'lnum' 1, 'pnum' 1"
@@ -368,7 +368,7 @@ export default function Home() {
           <h2
             className="font-['Syne'] font-bold text-[30px] md:text-[38px] lg:text-[45px] leading-[36px] md:leading-[42px] lg:leading-[48px] tracking-[-0.45px] bg-clip-text text-transparent"
             style={{
-              backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 20%, #3CA8DE 60%, #FF487B 100%)',
+              backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 40%, #3CA8DE 80%, #FF487B 100%)',
               backgroundPosition: '0 5px',
               filter: 'drop-shadow(0px 0px 24px rgba(90,222,249,0.35))',
               fontFeatureSettings: "'lnum' 1, 'pnum' 1"
@@ -455,7 +455,7 @@ export default function Home() {
           <h2
             className="font-['Syne'] font-bold text-[30px] md:text-[38px] lg:text-[45px] leading-[36px] md:leading-[42px] lg:leading-[48px] tracking-[-0.45px] bg-clip-text text-transparent"
             style={{
-              backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #3CA8DE 50%, #FF487B 100%)',
+              backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 30%, #3CA8DE 70%, #FF487B 100%)',
               backgroundPosition: '0 5px',
               filter: 'drop-shadow(0px 0px 24px rgba(90,222,249,0.35))',
               fontFeatureSettings: "'lnum' 1, 'pnum' 1"
@@ -490,7 +490,7 @@ export default function Home() {
         {/* Footer content */}
         <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[138px] py-[24px] flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Copyright */}
-          <p className="font-['IBM_Plex_Mono'] text-[12px] text-white/40 tracking-[0.5px]">
+          <p className="font-['Inter'] font-light text-[15px] leading-[18px] text-white/60">
             Copyright © LimaCharlie 2026
           </p>
 
