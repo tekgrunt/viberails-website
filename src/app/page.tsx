@@ -9,8 +9,12 @@ const imgLine8 = "/assets/line-8.svg"
 const imgLine7 = "/assets/line-7.svg"
 const imgStacks = "/assets/stacks.svg"
 const imgGroup1728 = "/assets/group-1728.svg"
-const imgSavings = "/assets/savings.svg"
-const imgDesignServices = "/assets/design-services.svg"
+const imgPolygon1 = "/assets/polygon-1.svg"
+const imgPolicyLayer = "/assets/policy-layer1.svg"
+const imgPolicyVector = "/assets/policy-vector.svg"
+const imgGroup1948 = "/assets/group-1948.svg"
+const imgGroup1949 = "/assets/group-1949.svg"
+const imgDvrIcon = "/assets/dvr-icon.svg"
 const imgEllipse4 = "/assets/ellipse-4.svg"
 const imgLayer1 = "/assets/layer-1.svg"
 const imgGroup1947 = "/assets/group-1947.svg"
@@ -194,25 +198,25 @@ export default function Home() {
             className="bg-clip-text text-transparent"
             style={{ backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 35%, #3CA8DE 70%, #FF487B 100%)', backgroundSize: '100% 120%', backgroundPosition: '0 0' }}
           >
-            Free, no credit card required
+            <span className="font-bold">Free</span>, no credit card required
           </span>
           <span
             className="bg-clip-text text-transparent"
             style={{ backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 35%, #3CA8DE 70%, #FF487B 100%)', backgroundSize: '100% 120%', backgroundPosition: '0 0' }}
           >
-            &lt;50ms Latency
+            <span className="font-bold">&lt;50ms</span> Latency
           </span>
           <span
             className="bg-clip-text text-transparent"
             style={{ backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 35%, #3CA8DE 70%, #FF487B 100%)', backgroundSize: '100% 120%', backgroundPosition: '0 0' }}
           >
-            5 minute setup
+            <span className="font-bold">5 minute</span> setup
           </span>
           <span
             className="bg-clip-text text-transparent"
             style={{ backgroundImage: 'linear-gradient(185deg, #FFFFFF 0%, #FFFFFF 35%, #3CA8DE 70%, #FF487B 100%)', backgroundSize: '100% 120%', backgroundPosition: '0 0' }}
           >
-            No sales demo required
+            <span className="font-bold">No</span> sales demo required
           </span>
         </div>
       </div>
@@ -276,8 +280,20 @@ export default function Home() {
 
           {/* Policy Enforcement */}
           <div className="flex flex-col gap-[12px]">
-            <div className="size-[90px]">
-              <img alt="" className="block max-w-none size-full" src={imgSavings} />
+            <div className="size-[90px] overflow-clip relative">
+              {/* Hexagonal outline */}
+              <div className="absolute inset-[2.22%_8.89%]">
+                <div className="absolute inset-[-4.17%_-7.96%_-4.17%_-4.73%]">
+                  <img alt="" className="block max-w-none size-full" src={imgPolygon1} />
+                </div>
+              </div>
+              {/* Badge/ribbon with gear dot */}
+              <div className="absolute left-[32.22%] right-[32.22%] top-1/2 -translate-y-1/2 aspect-[29/39] overflow-clip" style={{ filter: 'drop-shadow(0px 0px 12px rgba(60,168,222,0.5))' }}>
+                <div className="absolute inset-[28.65%_38.86%_54.87%_38.8%]">
+                  <img alt="" className="block max-w-none size-full" src={imgPolicyVector} />
+                </div>
+                <img alt="" className="block max-w-none size-full" src={imgPolicyLayer} />
+              </div>
             </div>
             <h3 className="font-['Syne'] font-semibold text-[24px] leading-[27px] tracking-[-0.24px] text-white" style={{ fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}>
               Policy Enforcement
@@ -289,8 +305,29 @@ export default function Home() {
 
           {/* Complete Audit Trail */}
           <div className="flex flex-col gap-[12px]">
-            <div className="size-[90px]">
-              <img alt="" className="block max-w-none size-full" src={imgDesignServices} />
+            <div className="size-[90px] overflow-clip relative">
+              {/* Right bracket lines */}
+              <div className="absolute h-[78px] left-[48.01px] top-[6.24px] w-[34.42px]">
+                <div className="absolute inset-[-4.49%_-8.72%]">
+                  <img alt="" className="block max-w-none size-full" src={imgGroup1948} />
+                </div>
+              </div>
+              {/* Left bracket lines (flipped) */}
+              <div className="absolute flex h-[78px] items-center justify-center left-[8.01px] top-[6.24px] w-[34.42px]">
+                <div className="-scale-y-100 flex-none rotate-180">
+                  <div className="h-[78px] relative w-[34.42px]">
+                    <div className="absolute inset-[-4.49%_-8.72%]">
+                      <img alt="" className="block max-w-none size-full" src={imgGroup1949} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* DVR/monitor icon */}
+              <div className="absolute h-[39px] left-[26px] top-[26.5px] w-[38px]">
+                <div className="absolute inset-[-20.27%_-25.25%]">
+                  <img alt="" className="block max-w-none size-full" src={imgDvrIcon} />
+                </div>
+              </div>
             </div>
             <h3 className="font-['Syne'] font-semibold text-[24px] leading-[27px] tracking-[-0.24px] text-white" style={{ fontFeatureSettings: "'lnum' 1, 'pnum' 1" }}>
               Complete Audit Trail
